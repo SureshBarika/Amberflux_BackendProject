@@ -1,0 +1,4 @@
+
+// src/uploads/.gitkeep
+# This file keeps the uploads directory in git
+# Actual upload files are ignored by .gitignore
