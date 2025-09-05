@@ -21,7 +21,7 @@ This folder contains the backend code for the Amberflux Screen Recorder project.
    ```
 2. Start the backend server:
    ```powershell
-   npm start
+   nodemon src/server.js
    ```
 
 ## API Endpoints
