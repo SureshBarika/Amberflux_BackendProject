@@ -38,7 +38,7 @@ const upload = multer({
 });
 
 // GET all recordings
-router.get("/", async (req, res) => {
+router.get("/api/recordings", async (req, res) => {
   try {
     const recordings = await Recording.findAll({
       order: [['createdAt', 'DESC']]
@@ -81,7 +81,7 @@ router.get("/:id", async (req, res) => {
 });
 
 // POST upload recording
-router.post("/", upload.single("recording"), async (req, res) => {
+router.post("/api/recordings", upload.single("recording"), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ 
